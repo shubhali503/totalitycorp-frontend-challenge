@@ -1,6 +1,10 @@
 import React from 'react'
 import logoWhite from '../icons/opensea-white.svg'
 
+function FooterListItem({itemName}) {
+   return <li className='footer__list-item'><a href="#">{itemName}</a></li>
+}
+
 export default function Footer() {
 
   const socialIcons = [
@@ -29,7 +33,7 @@ export default function Footer() {
           <h3>Join the community</h3>
           <div className="social__links">
             {socialIcons.map(icon =>
-              <a href="#" className="social__links-link"><i className={icon}></i></a>
+              <a href="#" className="social__links-link" key={icon}><i className={icon}></i></a>
             )}
           </div>
         </div>
@@ -48,57 +52,57 @@ export default function Footer() {
           <div className="footer__middle-column">
             <h3 className='footer__middle-column--header'>Marketplace</h3>
             <ul className='footer__list'>
-              <li className='footer__list-item'><a href="#">All NFTs</a></li>
-              <li className='footer__list-item'><a href="#">Solana NFTs</a></li>
-              <li className='footer__list-item'><a href="#">Art</a></li>
-              <li className='footer__list-item'><a href="#">Collectibles</a></li>
-              <li className='footer__list-item'><a href="#">Domain Names</a></li>
-              <li className='footer__list-item'><a href="#">Music</a></li>
-              <li className='footer__list-item'><a href="#">Photography</a></li>
-              <li className='footer__list-item'><a href="#">Sports</a></li>
-              <li className='footer__list-item'><a href="#">Trading Cards</a></li>
-              <li className='footer__list-item'><a href="#">Utility</a></li>
-              <li className='footer__list-item'><a href="#">Virtual Worlds</a></li>
+              <FooterListItem itemName={"All NFTs"}/>
+              <FooterListItem itemName={"Solana NFTs"}/>
+              <FooterListItem itemName={"Art"}/>
+              <FooterListItem itemName={"Collectibles"}/>
+              <FooterListItem itemName={"Domain Names"}/>
+              <FooterListItem itemName={"Music"}/>
+              <FooterListItem itemName={"Photography"}/>
+              <FooterListItem itemName={"Sports"}/>
+              <FooterListItem itemName={"Trading Cards"}/>
+              <FooterListItem itemName={"Utility"}/>
+              <FooterListItem itemName={"Virtual Worlds"}/>
             </ul>
           </div>
 
           <div className="footer__middle-column">
           <h3 className='footer__middle-column--header'>My Account</h3>
           <ul className='footer__list'>
-            <li className='footer__list-item'><a href="#">Profile</a></li>
-            <li className='footer__list-item'><a href="#">Favorites</a></li>
-            <li className='footer__list-item'><a href="#">Watchlist</a></li>
-            <li className='footer__list-item'><a href="#">My Collections</a></li>
-            <li className='footer__list-item'><a href="#">Settings</a></li>
+            <FooterListItem itemName={"Profile"}/>
+            <FooterListItem itemName={"Favorites"}/>
+            <FooterListItem itemName={"Watchlist"}/>
+            <FooterListItem itemName={"My Collections"}/>
+            <FooterListItem itemName={"Settings"}/>
           </ul>
           <h3 className='footer__middle-column--header'>Stats</h3>
           <ul className='footer__list'>
-            <li className='footer__list-item'><a href="#">Rankings</a></li>
-            <li className='footer__list-item'><a href="#">Activity</a></li>
+            <FooterListItem itemName={"Rankings"}/>
+            <FooterListItem itemName={"Activity"}/>
           </ul>
           </div>
 
           <div className="footer__middle-column">
           <h3 className='footer__middle-column--header'>Resources</h3>
             <ul className='footer__list'>
-              <li className='footer__list-item'><a href="#">Learn</a></li>
-              <li className='footer__list-item'><a href="#">Help Center</a></li>
-              <li className='footer__list-item'><a href="#">Platform Status</a></li>
-              <li className='footer__list-item'><a href="#">Partners</a></li>
-              <li className='footer__list-item'><a href="#">Taxes</a></li>
-              <li className='footer__list-item'><a href="#">Blog</a></li>
-              <li className='footer__list-item'><a href="#">Docs</a></li>
-              <li className='footer__list-item'><a href="#">Newsletter</a></li>
+              <FooterListItem itemName={"Learn"}/>
+              <FooterListItem itemName={"Help Center"}/>
+              <FooterListItem itemName={"Platform Status"}/>
+              <FooterListItem itemName={"Partners"}/>
+              <FooterListItem itemName={"Taxes"}/>
+              <FooterListItem itemName={"Blog"}/>
+              <FooterListItem itemName={"Docs"}/>
+              <FooterListItem itemName={"Newsletter"}/>
             </ul>
           </div>
 
           <div className="footer__middle-column">
           <h3 className='footer__middle-column--header'>Company</h3>
           <ul className='footer__list'>
-            <li className='footer__list-item'><a href="#">About</a></li>
-            <li className='footer__list-item'><a href="#">Careers</a></li>
-            <li className='footer__list-item'><a href="#">Ventures</a></li>
-            <li className='footer__list-item'><a href="#">Grants</a></li>
+            <FooterListItem itemName={"About"}/>
+            <FooterListItem itemName={"Careers"}/>
+            <FooterListItem itemName={"Ventures"}/>
+            <FooterListItem itemName={"Grants"}/>
           </ul>
           </div>
         </div>
