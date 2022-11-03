@@ -1,5 +1,5 @@
 .collection{
-    width: calc(50% - 50px);
+    min-width: calc(50% - 50px);
 
     &__header{
         display: flex;
