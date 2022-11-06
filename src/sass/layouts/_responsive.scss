@@ -4,7 +4,7 @@
     }
 
     .navbar__search{
-        width: 310px;
+        width: 300px;
         margin: 12px 0;
 
         &-input{
@@ -35,7 +35,7 @@
 }
 
 @include tablet{
-    
+
     .react-tabs__tab-panel{
         flex-wrap: wrap;
     }
